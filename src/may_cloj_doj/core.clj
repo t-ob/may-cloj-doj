@@ -21,12 +21,12 @@
     (rect x y square-size square-size)))
 
 (defn tetris-setup []
-  (smooth)                          ;;Turn on anti-aliasing
+  (smooth)
   (frame-rate 2)                    
-  (background 200))                 ;;Set the background colour to
+  (background 200))
 
 (defsketch example
-  :title "Oh so many grey hexagons"
+  :title "Game"
   :setup tetris-setup
   :draw tetris-draw
   :size [board-width board-height]
